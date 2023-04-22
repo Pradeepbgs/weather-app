@@ -11,7 +11,7 @@ function formEl(event){
 
  function getWeatherData(cityValue){
         const apikey = '5b67e98277c69bf4f774ba0547c63238';
-        const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apikey}&units=metrics`;
+        const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apikey}&units=metric`;
         try {
               fetch(apiurl).then(response => response.json()).then(data=>   {  
                         const temperature = data.main.temp;
